@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; border: 0;
+}
+a {text-decoration: none;}
+ul {list-style: none;}
+/* font-family: 'Nanum Pen Script', cursive; */
+@font-face {
+    font-family: 'BookkMyungjo-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'BookkMyungjo-Bd';
+}
+
+
+#top{
+    width: 31%;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    font-size: 25px;
+    font-weight: 700;
+    float: left;
+}
+#list{
+    width: 60%;
+    height: 100px;
+    float: right;
+    position: relative;
+    box-sizing: border-box;
+}
+#list ul{
+    display: block;
+    float: right;
+    padding: 42px 150px 0 0;
+    
+}
+#list li{
+    display: block;
+   float: left;
+    margin-left: 20px;
+  
+}
+#list li a{
+    color: black;
+}
+
+#contents{
+    margin: auto;
+    width: 100%;
+}
+#visual_wrap{
+    width: 100%;
+    height: 730px;
+    overflow: hidden;
+}
+#visual{
+    width: 100%;
+    height: 730px;
+  position: relative;
+}
+#visual_wrap ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#visual_wrap ul li{
+    width: 100%;
+    height: 100%;
+    /* float: left; */
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+#visual_wrap ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+#visual_p{
+    width: 45%;
+}
+#visual_p p{
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    color: #fff;
+    font-size: 4em;
+    transform: translateX(-50%);
+}
+#visual_p span{
+    font-size: 150px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.scroll {height: 1000px;
+position: relative;}
+#travel img{
+    width: 100%;
+    height: 100%;
+}
+#travel{
+    width: 100%;
+    margin: auto;
+   
+}
+
+.floating_menu {
+    width: 52%; 
+    height: 100px;
+    position: absolute; 
+    z-index: 99999;
+    left: 50%; 
+    bottom: 16%;
+    transform: translateX(-50%);
+}
+.menu{
+    width: 25%;
+    float: left;
+}
+.floating_menu a {
+    float: left;
+    width: 100%;
+     height: 100px;
+      display: block; 
+     box-sizing: border-box; 
+     text-align: center; 
+     line-height: 100px;
+     font-size: 25px;
+     background-color: rgba(0, 0, 0, .3);
+      color: #fff; 
+      font-weight: bold;
+    }
+
+
+.floating_menu li.on a {background-color: rgb(73, 76, 228);}
+#top_btn{
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 9px;
+    box-sizing: border-box;
+    z-index: 9999;
+}
+#top_btn a{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+footer {
+    width: 100%;
+    margin: auto;
+    height: 90px; 
+    padding-top: 40px;
+}
+footer p{
+    color: #999;
+}
+
+#container{
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    color: #fff;
+    box-sizing: border-box;
+}
+.fadeInLeft{
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'GangwonEdu_OTFBoldA';
+    box-sizing: border-box;
+}
+.fadeInLeft.map{
+    margin: 150px 0 0px 0px;
+    padding-left: 100px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    opacity: 0.5!important;
+}
+.fadeInLeft.map:hover{
+    opacity: 1 !important;
+}
+
+.fadeInLeft h1{
+    font-size: 200px;
+    font-family: 'Nanum Pen Script', cursive;
+    margin: 50px 0 50px 100px;
+    box-sizing: border-box;
+}
+.p{
+    margin: 330px 0 30px 0px;
+    padding: 0 100px 0;
+    box-sizing: border-box;
+}
+.p1{
+    padding: 0 100px 0 ;
+    box-sizing: border-box;
+}
+.fadeInLeft a{
+    /* position: absolute;
+    bottom: 10%;
+    left: 5%; */
+    float: left;
+    color: #fff;
+    text-decoration: underline;
+    font-style: italic;
+    margin: 130px 0 0 100px;
+    
+}
+#dividing_line{
+    width: 88%;
+    margin: auto;
+    height: 200px;
+    border-bottom: 1px solid #ccc;
+}
+#white_space{
+    width: 100%;
+    height: 200px;
+    margin: auto;
+}
+.C{
+    color: #ccc;
+}
+.fadeInLeft.address{
+    margin: 100px 0 0 50px;
+    height: 30px;
+    padding-left: 50px;
+}
+.menu ul li a{
+   z-index: 10000;
+   height: 80px;
+   text-align: center;
+   line-height: 80px;
+  
+}
+.menu ul{
+    display: none;
+}
+.floating_menu2{
+    position: fixed;
+    right: 5%;
+    top: 30%;
+    z-index: 99999;
+}
+.floating_menu2 li{
+    width: 150px;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+}
+.floating_menu2 li a{
+    color: #fff;
+    line-height: 60px;
+}
+.floating_menu2 li.on {background-color: #181717;}
+
+.fadeInLeft span{
+    background-color: rgba(0, 0, 0, .4);
+}
+.fadeInLeft p{
+    background-color: rgba(0, 0, 0, .4);
+}
+
+
